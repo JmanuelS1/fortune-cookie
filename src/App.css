@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+/*-------Reset----*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Truculenta", sans-serif;
+  background-color: black;
+  color: aliceblue;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+}
+
+
+/* ----- App ----- */
+
+.app {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+}
+
+.app__title {
+  width: 400px;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 2px orange,
+    2px -2px orange,
+    -2px 2px orange,
+    -2px -2px orange;
+}
+
+.txt {
+  background: url(../public/assets/imgs/rectangle1.svg);
+  background-size: cover;
+  background-position: center;
+  color: black;
+  height: 320px;
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.txt p {
+  text-align: center;
+  padding: 7px 14px;
+}
+
+.btn {
+  background-color: orange;
+  padding: 7px 14px;
+  border-radius: 7px;
+  transition: transform .5s;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid black;
+
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: transform .5s;
+}
