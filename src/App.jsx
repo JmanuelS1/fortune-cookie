@@ -8,9 +8,9 @@ import arrayImages from './utils/arrayImgs.json'
 
 function App() {
 
-  const [phrase, setPhrase] = useState(getRandom(arrayPhrases));
-
+const [phrase, setPhrase] = useState(getRandom(arrayPhrases));
 const [image, setImage] = useState(getRandom(arrayImages));
+
 
 
   const objStyles= {
@@ -29,7 +29,7 @@ const [image, setImage] = useState(getRandom(arrayImages));
     <ShowPhrase 
     phrase={phrase}
     />
-    
+
     <ButtonPhrase
     setPhrase={setPhrase}
     setImage={setImage}
